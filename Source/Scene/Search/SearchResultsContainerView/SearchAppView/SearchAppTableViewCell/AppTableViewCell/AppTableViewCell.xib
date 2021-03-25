@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="409" id="KGk-i7-Jjw" customClass="AppTableViewCell" customModule="MyAppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="612" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="612" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7kg-TD-iRI">
+                        <rect key="frame" x="20" y="19" width="173.5" height="62"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeW-sc-I8y" customClass="AppIconView" customModule="MyAppStore" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FeW-sc-I8y" secondAttribute="height" multiplier="1:1" id="YqC-w1-O65"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HNr-GW-lfO">
+                                <rect key="frame" x="72" y="0.0" width="101.5" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yc-qY-467">
+                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqZ-y5-oe4">
+                                        <rect key="frame" x="0.0" y="20.5" width="101.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-G8-mDx">
+                                        <rect key="frame" x="0.0" y="41.5" width="101.5" height="20.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-hg-gRI" customClass="StarRatingView" customModule="MyAppStore" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="20.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="Cb0-fB-4dD"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5만" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejV-pB-0HV">
+                                                <rect key="frame" x="75" y="0.0" width="26.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="FnO-C5-8QR"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내 구입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eew-1g-YoA">
+                        <rect key="frame" x="560.5" y="70" width="33" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-AM-IIn" customClass="AppPurchaseButton" customModule="MyAppStore" customModuleProvider="target">
+                        <rect key="frame" x="562" y="35" width="30" height="30"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7kg-TD-iRI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="20" id="9cJ-8N-8Yx"/>
+                    <constraint firstItem="eew-1g-YoA" firstAttribute="centerX" secondItem="8s5-AM-IIn" secondAttribute="centerX" id="FrX-Q2-S0a"/>
+                    <constraint firstItem="eew-1g-YoA" firstAttribute="top" secondItem="8s5-AM-IIn" secondAttribute="bottom" constant="5" id="KJp-aJ-ryI"/>
+                    <constraint firstItem="7kg-TD-iRI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OkO-fL-bev"/>
+                    <constraint firstItem="7kg-TD-iRI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bS0-v1-eez"/>
+                    <constraint firstAttribute="trailing" secondItem="8s5-AM-IIn" secondAttribute="trailing" constant="20" id="faW-zl-63W"/>
+                    <constraint firstItem="8s5-AM-IIn" firstAttribute="centerY" secondItem="7kg-TD-iRI" secondAttribute="centerY" id="mM3-2b-LWr"/>
+                    <constraint firstItem="8s5-AM-IIn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7kg-TD-iRI" secondAttribute="trailing" constant="10" id="rgC-Rj-vIw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="gqZ-y5-oe4" id="SyO-7N-br0"/>
+                <outlet property="iconView" destination="FeW-sc-I8y" id="sgn-hw-l6z"/>
+                <outlet property="inAppPurchaseNoticeLabel" destination="eew-1g-YoA" id="EkS-qB-Zyr"/>
+                <outlet property="purchaseButton" destination="8s5-AM-IIn" id="QOk-Ae-35b"/>
+                <outlet property="ratingCountLabel" destination="ejV-pB-0HV" id="nTj-04-mKy"/>
+                <outlet property="ratingStackView" destination="qu0-G8-mDx" id="6w7-gO-hbU"/>
+                <outlet property="ratingView" destination="0YL-hg-gRI" id="pEm-1X-eHw"/>
+                <outlet property="titleLabel" destination="2yc-qY-467" id="q1u-da-nS8"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
