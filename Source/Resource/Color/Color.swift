@@ -7,7 +7,9 @@
 
 import UIKit
 
+
 enum Color {
+
     case defaultViewBackground
     case defaultTextColor
     case starRatingColor
@@ -19,4 +21,5 @@ enum Color {
         }
         return color
     }
+
 }

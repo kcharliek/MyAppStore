@@ -86,7 +86,7 @@
 		C4C360ED260C82A50076C985 /* SearchEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C360EC260C82A50076C985 /* SearchEmptyView.swift */; };
 		C4C360F2260C9B990076C985 /* StarRatingComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C360F1260C9B990076C985 /* StarRatingComponentView.swift */; };
 		C4C360F5260C9F040076C985 /* ScreenshotGalleryViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C360F4260C9F040076C985 /* ScreenshotGalleryViewStyle.swift */; };
-		C4E27328260664B10015A236 /* API+AppStoreLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E27327260664B10015A236 /* API+AppStoreLookup.swift */; };
+		C4E27328260664B10015A236 /* API+Lookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E27327260664B10015A236 /* API+Lookup.swift */; };
 		C4F83F8826079D0500F40C8A /* SearchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83F8626079D0500F40C8A /* SearchHistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -175,7 +175,7 @@
 		C4C360EC260C82A50076C985 /* SearchEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyView.swift; sourceTree = "<group>"; };
 		C4C360F1260C9B990076C985 /* StarRatingComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingComponentView.swift; sourceTree = "<group>"; };
 		C4C360F4260C9F040076C985 /* ScreenshotGalleryViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotGalleryViewStyle.swift; sourceTree = "<group>"; };
-		C4E27327260664B10015A236 /* API+AppStoreLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+AppStoreLookup.swift"; sourceTree = "<group>"; };
+		C4E27327260664B10015A236 /* API+Lookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Lookup.swift"; sourceTree = "<group>"; };
 		C4F83F8626079D0500F40C8A /* SearchHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,8 +282,8 @@
 		C41F17D62604B03E000CC4B3 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				C438717D2605935000810A99 /* AppDetail */,
 				C41F17D72604B043000CC4B3 /* Search */,
+				C438717D2605935000810A99 /* AppDetail */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -349,6 +349,7 @@
 				C479D75F260A0188006820DD /* Unspecified.swift */,
 				C4C360E9260C753B0076C985 /* ScrollViewContentOffsetNotifier.swift */,
 				C4859FAC260CBE62006F3C39 /* Debouncer.swift */,
+				C4B85A9F2608D296008C49AE /* PagingCollectionViewFlowLayout.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -482,20 +483,9 @@
 			children = (
 				C43872842606590700810A99 /* API.swift */,
 				C438728A2606596A00810A99 /* API+Search.swift */,
-				C4E27327260664B10015A236 /* API+AppStoreLookup.swift */,
+				C4E27327260664B10015A236 /* API+Lookup.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		C47836D726099FE1005274BC /* ScreenshotGalleryView */ = {
-			isa = PBXGroup;
-			children = (
-				C4B85AA32608D307008C49AE /* ScreenshotGalleryView.swift */,
-				C4B85AA62608D494008C49AE /* ScreenshotGalleryCollectionViewCell.swift */,
-				C4C360F4260C9F040076C985 /* ScreenshotGalleryViewStyle.swift */,
-				C4B85A9F2608D296008C49AE /* PagingCollectionViewFlowLayout.swift */,
-			);
-			path = ScreenshotGalleryView;
 			sourceTree = "<group>";
 		};
 		C47836EF2609F1EC005274BC /* AppDelegate */ = {
@@ -545,7 +535,9 @@
 		C4B85AA22608D2B2008C49AE /* ScreenshotGalleryView */ = {
 			isa = PBXGroup;
 			children = (
-				C47836D726099FE1005274BC /* ScreenshotGalleryView */,
+				C4B85AA32608D307008C49AE /* ScreenshotGalleryView.swift */,
+				C4B85AA62608D494008C49AE /* ScreenshotGalleryCollectionViewCell.swift */,
+				C4C360F4260C9F040076C985 /* ScreenshotGalleryViewStyle.swift */,
 			);
 			path = ScreenshotGalleryView;
 			sourceTree = "<group>";
@@ -704,7 +696,7 @@
 				C4B85AA72608D494008C49AE /* ScreenshotGalleryCollectionViewCell.swift in Sources */,
 				C4C360F5260C9F040076C985 /* ScreenshotGalleryViewStyle.swift in Sources */,
 				C47836E82609F0DC005274BC /* SearchCoordinator.swift in Sources */,
-				C4E27328260664B10015A236 /* API+AppStoreLookup.swift in Sources */,
+				C4E27328260664B10015A236 /* API+Lookup.swift in Sources */,
 				C4B85AA02608D296008C49AE /* PagingCollectionViewFlowLayout.swift in Sources */,
 				C479D75D2609FF4F006820DD /* UIStoryboardExtensions.swift in Sources */,
 				C49CFDC52607806F00C0D847 /* SearchViewFactory.swift in Sources */,

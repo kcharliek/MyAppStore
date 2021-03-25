@@ -21,6 +21,8 @@ private enum Design {
 
 class AppDetailInfoTableViewCell: BaseAppDetailTableViewCell {
 
+    // MARK: - Variables
+
     let titleLabel: UILabel = {
         let label = UILabel()
 
@@ -51,6 +53,8 @@ class AppDetailInfoTableViewCell: BaseAppDetailTableViewCell {
 
         return stackView
     }()
+
+    // MARK: - Methods
 
     override func setupSubViews() {
         super.setupSubViews()

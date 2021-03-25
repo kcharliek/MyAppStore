@@ -15,7 +15,6 @@ protocol SearchResultsContainerViewControllerDelegate: AnyObject {
 
 }
 
-
 class SearchResultsContainerViewController: UIViewController {
 
     // MARK: - Variables
@@ -97,7 +96,6 @@ extension SearchResultsContainerViewController: SearchQuerySuggestionViewDelegat
 
     func searchQuerySuggestionView(_ viewController: SearchQuerySuggestionView, didSelectQuery query: String) {
         delegate?.searchResultsContainerViewController(self, didSelectSuggestedQuery: query)
-//        viewModel.search(with: query, target: .app)
     }
 
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class AppDetailScreenshotTableViewCell: BaseAppDetailTableViewCell {
 
+    // MARK: - Variables
+
     override class var cellHeight: CGFloat { UIScreen.main.bounds.height * 0.55 }
 
     static let style: ScreenshotGalleryViewStyle = ScreenshotGalleryViewStylePreset.appDetail.value
@@ -22,6 +24,8 @@ class AppDetailScreenshotTableViewCell: BaseAppDetailTableViewCell {
     }()
 
     private var screenshotURLStrings: [String] = []
+
+    // MARK: - Methods
 
     override func bind(model: AppDetailTableViewCellModel) {
         screenshotURLStrings = model.app.screenshotUrls ?? []
@@ -40,6 +44,8 @@ class AppDetailScreenshotTableViewCell: BaseAppDetailTableViewCell {
     }
 
 }
+
+// MARK: - ScreenshotGalleryViewDataSource
 
 extension AppDetailScreenshotTableViewCell: ScreenshotGalleryViewDataSource {
 

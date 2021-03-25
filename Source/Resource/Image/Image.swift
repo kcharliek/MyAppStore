@@ -7,7 +7,9 @@
 
 import UIKit
 
+
 enum Image {
+
     case search
     case star_rating_mask
     case star_rating_outline
@@ -23,4 +25,5 @@ enum Image {
         }
         return image
     }
+
 }

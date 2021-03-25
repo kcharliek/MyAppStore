@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SearchHistoryTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
